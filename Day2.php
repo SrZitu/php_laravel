@@ -32,6 +32,7 @@ $num1=60;
 $num2=2;
 $num2+=$num1;
 echo $num2 ."\n";
+
 $i=5;
 $j=$i++;
 echo "j=$j i=$i\n";

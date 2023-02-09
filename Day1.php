@@ -46,3 +46,9 @@ echo "m=$m n=$n\n";
  $n=$n+1
 $m=$n;
 */
+var_dump(123);
+var_dump(0123);
+
+for($i=0;$i<=2;++$i){
+    print ++$i;
+}

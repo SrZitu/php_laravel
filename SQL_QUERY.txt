@@ -1,0 +1,19 @@
+1.
+select E.first_name,E.last_name,D.department_id,D.department_name from hr.employees E join hr.departments  D ON E.department_id=D.department_id;
+
+2.
+select E.first_name,E.last_name,D.department_name,L.city,L.state_province from hr.employees E join hr.departments  D ON E.department_id=D.department_id
+join hr.locations L on D.location_id=L.location_id;
+
+3.
+select E.first_name,E.last_name,D.department_id,D.department_name from hr.employees E join hr.departments  D ON E.department_id=D.department_id and E.department_id In(80,40) order by E.last_name; 
+
+4. very important
+select E.first_name,E.last_name,D.department_name,L.city,L.state_province from hr.employees E join hr.departments  D ON E.department_id=D.department_id
+join hr.locations L on D.location_id=L.location_id where E.first_name like 'A%';
+
+5.
+select E.first_name,E.last_name,D.department_id,D.department_name from hr.employees E join hr.departments  D ON E.department_id=D.department_id; 
+
+6.
+select E.first_name,E.last_name,E.salary from hr.employees E join hr.employees S  ON E.salary<S.salary AND s.employee_id=182; 

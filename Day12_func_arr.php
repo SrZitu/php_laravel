@@ -9,7 +9,7 @@ $newfruits2=array_slice($fruits,3); //3 index to last pojonto print korbe
 $newfruits=array_merge($newfruits1,$newfruits2); //merges array
 print_r($newfruits);
 // print_r($newfruits2);
-// print_r($newfruits);
+// print_r($newfruits); 
 echo "**Another way of merging array**\n";
 
 $newfruits3=array_slice($fruits,0,3); //0 theke sure hbe 2 index means 3 ghor nibe
