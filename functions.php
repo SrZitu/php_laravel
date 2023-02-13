@@ -22,7 +22,7 @@ function isFactorial(int $x)
     }
     return $result;
 }
-//default value of a functional parameter
+//default value of a functional parameter or optional parameter
 function serve($foodType = "coffe", $quantity = "1 unit")
 { //1 takey deafult value dile onnotako dite hbe
     echo "\n{$quantity} {$foodType} is served ";

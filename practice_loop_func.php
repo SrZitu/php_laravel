@@ -28,5 +28,30 @@ else if ($a > 20)
     printf("PHP MCQ");
 else if ($a > 30)
     printf("PHP Program");
+echo PHP_EOL;
 
+    //call by value
+    function adder(&$str2)  
+{  
+    $str2 .= 'Call By Value';  
+}  
+$str = 'Hello ';  
+adder($str);  
+echo $str;  
 
+echo PHP_EOL;
+
+function increment(&$i)  
+{  
+    $i++;  
+    echo $i;
+    echo PHP_EOL;
+
+}  
+$i = 10;  
+increment($i);  
+echo $i; 
+echo PHP_EOL;
+
+include_once("functions.php");
+echo "Factorial is:". isFactorial(6);
