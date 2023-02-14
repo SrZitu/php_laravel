@@ -1,7 +1,7 @@
 <?php
 function displayProduct($product)
-{
-?>
+{//updated
+?> 
     <a href="#" class="group">
         <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
             <img src="<?php echo $product['image'];?>">
