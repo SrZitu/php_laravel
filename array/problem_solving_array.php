@@ -126,8 +126,8 @@ echo PHP_EOL;
 // 8.Problem: Find the intersection of multiple arrays of strings, i.e. the values that appear in all arrays:
 
 $fruits1 = array("apple", "banana", "orange");
-$fruits2 = array("orange", "apple", "grape", "kiwi","orange");
-$fruits3 = array("apple", "pear", "kiwi","orange");
+$fruits2 = array("orange", "apple", "grape", "kiwi", "orange");
+$fruits3 = array("apple", "pear", "kiwi", "orange");
 
 //Find the intersection of the arrays
 //print_r(array_intersect($fruits1, $fruits2, $fruits3));
@@ -144,7 +144,7 @@ $matrix = array(
   array(7, 8, 9)
 );
 
- // Flatten the matrix into a single array
-$flat_array = array_merge(...$matrix); 
+// Flatten the matrix into a single array
+$flat_array = array_merge(...$matrix);
 
 print_r($flat_array);
