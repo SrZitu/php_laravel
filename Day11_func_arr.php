@@ -170,16 +170,16 @@ if (isset($name) && (is_numeric($name) || $name != '')) {
 //The changes do not reflect in the original array.
 $fruits = array('apple', 'banana', 'guava', 'orange', 'malta', 'grapes');
 
-//$somefruits=array_slice($fruits,2); //takes 0 index to last index
+//$somefruits=array_slice($fruits,2); //takes 2 index to last index
 //$somefruits=array_slice($fruits,2,2); //2 index theke suru kore 2 ta print
 //$somefruits=array_slice($fruits,-5,-1);  //-1 means last er ager ta 
-$somefruits = array_slice($fruits, 3, 3, true);  //true dewar karone real index show korbe
+$somefruits = array_slice($fruits,2,3,true);  //true dewar karone real index show korbe
 print_r($somefruits);
 
 //slice with associative array
 echo "******Slice in associative array*****\n";
 $random = array('a' => 12, 'b' => 13, 'c' => 14, 'd' => 15, 21 => 16, 'f' => 17);
-$splcRandom = array_slice($random, -4, -1, true); //true dewar karone integer 21 key keo dekasse
+$splcRandom = array_slice($random, -4, -1,true); //true dewar karone integer 21 key keo dekasse
 print_r($splcRandom);
 
 //Array Splice
@@ -193,6 +193,6 @@ $student_one = array(
 );
 //$SpiceStudent=array_splice($student_one,1,true); //show all value except 1 no index
 $addNewvalue = array('jackfruit', 'lemon');
-$Spicenewfruit = array_splice($newfruits, -5, -1, $addNewvalue);
+$Spicenewfruit = array_splice($newfruits,0,4,$addNewvalue);
 print_r($Spicenewfruit); //akhnkar gulo original array te bad pore gese
 print_r($newfruits); //new gulo original array te add hoye gese

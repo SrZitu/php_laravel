@@ -3,7 +3,7 @@
 $fruits = array('apple', 'banana', 'orange', 'plum', 'dates', 'mango');
 $random = array("a" => 12, "b" => 45, "c" => 34, "d" => 22, "e" => 77, "f" => 33, 12 => 78, "g" => 87);
 
-$newfruits1 = array_slice($fruits, 0, 3); //0 theke sure hbe 2 index means 3 ghor nibe
+$newfruits1 = array_slice($fruits, 0, 2); //0 theke sure hbe 2 index means 3 ghor nibe
 $newfruits2 = array_slice($fruits, 3); //3 index to last pojonto print korbe
 
 $newfruits = array_merge($newfruits1, $newfruits2); //merges array
@@ -19,7 +19,8 @@ print_r($newfruitsPlus);
 
 //Associcative array er khetre array slice key preserve kre
 $r1 = array_slice($random, 0, 2, true);
-$r2 = array_slice($random, 4, null, true);
+$r2 = array_slice($random, 4,null,true);
+print_r($r2);
 $r3 = array("j" => 13, "k" => 14);
 
 //splice changed my original array that's why it's showing  13 ,14 into index 2 and 3 respectively
@@ -67,7 +68,7 @@ $indxSearch = in_array('12', $asscoArry, true); // true dile not found dekhabe 1
 if ($indxSearch) {
     echo "\nfound\n";
 } else {
-    echo "not found\n";
+    echo "\nnot found\n";
 }
 
 $array = array(0 => 'blue', 1 => 'red', 2 => 'green', 3 => 'red');
@@ -93,8 +94,8 @@ $ary1 = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow", "e" 
 $ary2 = array("e" => "red", "f" => "green", "g" => "gray", 'd' => "yellow", "z" => "pink");
 
 //argument er vitor j array ta agey thakbe setar valur sathe match kore return korbe.
-$aryintrsec1 = array_intersect($ary1, $ary2); //returns red green blue of ary1
-$aryintrsec2 = array_intersect($ary2, $ary1); //returns red green blue of ary2
+$aryintrsec1 = array_intersect($ary1, $ary2); //returns red green yellow of ary1
+$aryintrsec2 = array_intersect($ary2, $ary1); //returns red green yellow of ary2
 $aryintrsec3 = array_intersect_assoc($ary1, $ary2);
 
 print_r($aryintrsec1);
@@ -139,6 +140,7 @@ print_r($arrywalk);
 
 $arrymap = array_map("cube", $aray); //array map main array tar  copy ney then setar upor kaj kore
 //new resultant array output deey
+echo "**map";
 print_r($arrymap);
 
 //The array_filter() function filters the values of an array using a callback function.
