@@ -56,6 +56,7 @@ function removeFirstAndLast($crickter)
 
 $crickter = array("Tamim", "Sakib", "Musfiq", "sachin", "sehwag", "rahul", "ganguly", "yuvraj");
 print_r(removeFirstAndLast($crickter));
+
 /*
 output:
 Array
