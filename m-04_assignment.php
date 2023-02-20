@@ -97,11 +97,10 @@ echo PHP_EOL;
 function findSecondLargeNumber($array)
 {
     rsort($array);
-    print_r($array);
     return $array[1];
 }
-$array = array(12, 44, 56, 77, 88, 92, 123, 95, 1234, 456);
-echo findSecondLargeNumber($array); 
+ $array = array(12, 44, 56, 77, 88, 92, 123, 95, 1234, 456);
+ echo "Second largest number is:" . findSecondLargeNumber($array); 
 /*output:
  
 456
