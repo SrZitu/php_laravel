@@ -1,19 +1,17 @@
 <?php
 session_start();
-
-$valid_username = "zitu";
+$valid_user = "sazzad";
 $valid_password = "123456";
 
-if ( isset( $_POST['username'] ) && isset( $_POST['password'] ) ) {
-    $username = $_POST['username'];
+if ((isset($_POST['name'])) && isset($_POST['password'])) {
+    $name = $_POST['name'];
     $password = $_POST['password'];
 
-    if ( $username == $valid_username && $password == $valid_password ) {
-        $_SESSION['username'] = $username;
-        header( "Location: welcome.php" );
+    if ($valid_user == $name && $valid_password == $password) {
+        $_SESSION['name'] = $name;
+        header("Location:welcome.php");
         exit();
     } else {
-        echo "Invalid username or password.";
+        echo "invalid  user or password";
     }
 }
-?>
