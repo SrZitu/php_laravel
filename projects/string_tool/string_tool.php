@@ -14,24 +14,11 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" />
 
 
-    <!--fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <!-- Font awesome css -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet">
-    <!--slick-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="scss/styles.css" />
-    <!--light box plugin-->
-    <link rel="stylesheet" href="css/simple-lightbox.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-</head>
+  
+ 
 
 <body>
+
     <div class="container">
         <h2>String Conversion Tool</h2>
         <div class="row">
@@ -59,6 +46,7 @@
                     <input type="submit" class="bg-success" value="submit">
 
                 </form>
+
                 <?php
                 if (isset($_POST['string']) && isset($_POST['string_function'])) {
                     $string = $_POST['string'];
