@@ -15,7 +15,7 @@ class Address
     public $city;
 }
 
-class Person
+class Person1
 {
     public $name;
 
@@ -35,7 +35,7 @@ class Person
     // }
 }
 
-$bob = new Person('Bob');
+$bob = new Person1('Bob');
 $bob->address->street = 'North 1st Street';
 $bob->address->city = 'San Jose';
 
