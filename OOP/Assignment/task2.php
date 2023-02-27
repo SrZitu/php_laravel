@@ -16,16 +16,16 @@ class Person
     }
     public function getName()
     {
-        echo "Name :" . $this->name;
+        return $this->name;
     }
     public function getEmail()
     {
-        echo "Email :" . $this->email;
+       return $this->email;
     }
 }
 $person1=new Person();
 $person1->setName("Sazzad");
 $person1->setEmail("zitu094@gmail.com");
-$person1->getName();
+echo "Name: " . $person1->getName();
 echo "<br/>";
-$person1->getEmail();
+echo "Email: " .$person1->getEmail();
