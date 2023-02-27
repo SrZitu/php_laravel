@@ -1,0 +1,38 @@
+/* ==========================================================================
+> Header
+========================================================================== */
+.header {
+  padding: 40px 0 300px 0;
+}
+
+.navbar {
+  padding: 0 1rem;
+  background: #ffffff !important;
+  padding: 6px;
+  margin: 0 auto;
+  a img {
+    width: 50% !important;
+  }
+
+  .navbar-toggler {
+    outline: none !important;
+  }
+  .toggler-icon {
+    font-size: 24px;
+    color: $black;
+  }
+  .nav-link {
+    color: $black;
+    transition: all 1s ease-in-out;
+    font-size: 20px;
+    justify-content: space-between;
+  }
+  .nav-link:hover {
+    color: $pink;
+  }
+}
+//banner
+
+// .package img {
+//   width: 100%;
+// }

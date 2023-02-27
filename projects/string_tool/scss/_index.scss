@@ -1,0 +1,275 @@
+/*image class*/
+@import "responsive";
+
+img {
+  width: 100%;
+}
+
+/*********Button Top**********/
+#button {
+  display: inline-block;
+  background-color: rgb(149, 231, 149);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/**************Nav Active Code****************/
+
+.active {
+  color: $pink !important;
+  border-bottom: 2px solid $pink;
+}
+
+/**************Banner Slider**************/
+.slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
+  height: calc(100vh - 95px);
+  width: 100%;
+}
+.slider {
+  .slick-prev:before {
+    color: red;
+    font-size: 25px;
+  }
+  .slick-next:before {
+    font-size: 25px;
+    color: red;
+  }
+}
+
+/* first section's first row's class name*/
+.shop-image {
+  position: relative;
+  text-align: center;
+  color: white;
+
+  /* left container of shop-image*/
+  .left-container {
+    position: absolute;
+    color: $blue;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+
+    h3 {
+      width: 204px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+  /*right container*/
+  .right-container {
+    position: absolute;
+    color: $blackbtn;
+    top: 2%;
+    left: 7%;
+    transform: translate(2%, 40%);
+
+    h3 {
+      width: 166px;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .blue-title {
+    color: $blue;
+  }
+  .black-title {
+    color: $blackbtn;
+  }
+}
+
+/*fist sctions second row's 3 div's class name is pack*/
+.pack:hover {
+  transition: all 1s linear;
+  .pack-head-title {
+    background: $pink;
+    color: white;
+  }
+}
+
+.product-title-blue {
+  color: $blue !important;
+  span {
+    color: $pink !important;
+  }
+}
+/* End of package section*/
+/* popular product section*/
+.popular-product {
+  .single-product,
+  .popular-product-name {
+    transition: all 0.5s linear;
+    &:hover {
+      box-shadow: 0 10px 15px rgb(0, 0, 0);
+      color: $white;
+      background: $blue;
+    }
+  }
+}
+
+/**********   services section  *************/
+.service {
+  background: #f8f8f8;
+  padding: 20px 0 250px 0;
+
+  /*******service Slider Button******************/
+  .slick-prev:before {
+    color: red;
+    font-size: 25px;
+  }
+  .slick-next:before {
+    color: red;
+    font-size: 25px;
+  }
+}
+.service-img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/**************  design process section  **********/
+.design-process {
+  background: $pink;
+
+  .vedio {
+    margin-top: -200px;
+    margin-bottom: 40px;
+  }
+  img {
+    width: 20% !important;
+  }
+}
+
+/***********End Of Design Process  ***********/
+
+/*********************News Letter section***********/
+
+.Newsletter {
+  margin-top: 80px;
+}
+.email {
+  height: 50px;
+  padding-left: 27px;
+}
+.left-pd {
+  padding: 2px 36px 2px 38px;
+}
+.subscribe {
+  padding: 8px 43px 9px 38px !important;
+}
+.Newsletter-heading h2 {
+  color: $blue;
+}
+.icons {
+  color: #b8c2d1;
+  background: white;
+  font-size: 32px;
+  border-radius: 5px;
+  padding: 18px 16px 16px 16px;
+  border: 1px solid $gray;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    background: $blue;
+    color: white;
+  }
+}
+.fb-icon {
+  padding: 18px 23px 15px 20px;
+}
+.icon-list {
+  padding-top: 50px;
+}
+
+/**************************Footer******************/
+.footer {
+  padding-top: 10px;
+  background: #f0f0f0;
+  margin-top: 85px;
+  .first-coloumn-icon {
+    width: 12% !important;
+  }
+
+  img {
+    width: 45%;
+    padding-bottom: 10px;
+  }
+}
+.ul-margin {
+  margin: 55px 0px 10px 0px;
+  .fa {
+    color: $pink;
+  }
+}
+.ul-about .footer-heading {
+  padding-bottom: 10px;
+}
+
+.first-col {
+  color: $blackbtn;
+  font-weight: $semi-bold;
+  line-height: 2;
+}
+
+.ul-about {
+  li {
+    padding-top: 20px;
+    line-height: 0.9;
+  }
+  a {
+    color: $blackbtn;
+  }
+  .footer-padding {
+    margin-left: 20px;
+  }
+}
+/****************Copy right section**************/
+.copyright {
+  background: #2ba7df;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  p {
+    color: white;
+  }
+  .copyright-div .p {
+    font-weight: $semi-bold;
+    line-height: 0.8;
+  }
+  .copyright-heading {
+    font-weight: $bold !important;
+  }
+}
