@@ -42,10 +42,10 @@ echo $obj1 instanceof A1;
 echo PHP_EOL;
 //example 2
 
-interface Cars {
+interface CarInterface {
         public function intro();
     }
-class BMW implements Cars{
+class BMW implements CarInterface{
         public $secret_engine;
     
         public function __construct($engine)
@@ -59,7 +59,7 @@ class BMW implements Cars{
         }
     }
     
-    class Toyota implements Cars{
+    class Toyota implements CarInterface{
         public $secret_engine;
     
         public function __construct($engine)
