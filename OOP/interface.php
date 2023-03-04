@@ -42,60 +42,68 @@ echo $obj1 instanceof A1;
 echo PHP_EOL;
 //example 2
 
-interface CarInterface {
-        public function intro();
-    }
-class BMW implements CarInterface{
-        public $secret_engine;
-    
-        public function __construct($engine)
-        {
-            $this->secret_engine = $engine;
-        }
-    
-        public function intro()
-        {
-            echo "This is BMW car with engine: $this->secret_engine";   
-        }
-    }
-    
-    class Toyota implements CarInterface{
-        public $secret_engine;
-    
-        public function __construct($engine)
-        {
-            $this->secret_engine = $engine;
-        }
-    
-        public function intro()
-        {
-            echo "This is Toyota car with engine: $this->secret_engine";   
-        }
-    }
-    
-    
-    //Create Objects
-    $bmw = new BMW("BM7345iu&6");
-    $toyota = new Toyota("TY89345au&6");
-    $bmw->intro();
-    echo PHP_EOL;
-    $toyota->intro();
-    echo PHP_EOL;
-    
+interface CarInterface
+{
+    public function intro();
+}
+class BMW implements CarInterface
+{
+    public $secret_engine;
 
-    //example 3
-interface Animal {
+    public function __construct($engine)
+    {
+        $this->secret_engine = $engine;
+    }
+
+    public function intro()
+    {
+        echo "This is BMW car with engine: $this->secret_engine";
+    }
+}
+
+class Toyota implements CarInterface
+{
+    public $secret_engine;
+
+    public function __construct($engine)
+    {
+        $this->secret_engine = $engine;
+    }
+
+    public function intro()
+    {
+        echo "This is Toyota car with engine: $this->secret_engine";
+    }
+}
+
+
+//Create Objects
+$bmw = new BMW("BM7345iu&6");
+$toyota = new Toyota("TY89345au&6");
+$bmw->intro();
+echo PHP_EOL;
+$toyota->intro();
+echo PHP_EOL;
+
+
+//example 3
+interface Animal
+{
     public function makeSound();
 }
 
-class Dog implements Animal {
-    public function makeSound() {
+class Dog implements Animal
+{
+    public function makeSound()
+    {
         echo "Woof!\n";
     }
 }
 
-class Cat implements Animal {
-    public function makeSound() {
+class Cat implements Animal
+{
+    public function makeSound()
+    {
         echo "Meow!\n";
     }
 }
@@ -107,6 +115,6 @@ $animals = [
 ];
 
 // Loop through the animals and make them all make a sound
-foreach ( $animals as $animal ) {
+foreach ($animals as $animal) {
     $animal->makeSound();
 }

@@ -50,3 +50,4 @@ echo $rec->getArea();
 echo PHP_EOL;
 $tri = new Triangle(6, 4);
 echo $tri->getArea();
+

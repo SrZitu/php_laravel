@@ -47,7 +47,7 @@ $obj2->getAge();
 //another way to passing values to class properties and method
 $obj3 = new Myclass();
 //$obj2->name = "sazzad";
-$obj3->name="sadman";
-$obj3->age=2;
+$obj3->name = "sadman";
+$obj3->age = 2;
 $obj3->getName();
 $obj3->getAge();
