@@ -1,0 +1,7 @@
+PHP
+Javascript
+React 
+laravel
+Node
+MySQL
+Mongoose

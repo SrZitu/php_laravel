@@ -24,15 +24,17 @@ class Person1
     public function __construct($name)
     {
         $this->name = $name;
-        $this->address = new Address();
+        $this->address = new Address(); //ar vitore obj ase tai clone use korle akta change korle
+                                        // r akta change hbena
+
     }
 
 
-    // public function __clone()
-    // {
-    // 	$this->address = clone $this->address;  //this implents deep copy.
-    //  tarmane aktar karone r akta change hssena
-    // }
+    public function __clone()
+    {
+    	$this->address = clone $this->address;  //this implents deep copy.
+                                               //tarmane aktar karone r akta change hssena
+    }
 }
 
 $bob = new Person1('Bob');
@@ -49,4 +51,7 @@ print_r($alex);
 $alex->address->street = '1 Apple Park Way';
 $alex->address->city = 'Cupertino';
 
-print_r($bob); //shallow copy,alex change korte bob o change hoye gese
+print_r($alex);
+
+print_r($bob); //shallow copy,alex change korte bob o change hoye jabe 
+              // jodi __clone use na kori

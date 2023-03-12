@@ -45,9 +45,9 @@ echo "Current Unix timestamp: " . $timestamp;
 echo PHP_EOL;
 // Output:
 // Current Unix timestamp: 1645029114
-// You can also create a Unix timestamp from a specific date and time using the strtotime() function, like this:
 
-$date_time = '2022-02-21 16:30:00';
+// You can also create a Unix timestamp from a specific date and time using the strtotime() function, like this:
+$date_time = '2022-03-08 16:30:00';
 $timestamp = strtotime($date_time);
 echo "Unix timestamp for " . $date_time . ": " . $timestamp;
 echo PHP_EOL;
@@ -58,7 +58,7 @@ echo PHP_EOL;
 // To convert a Unix timestamp back to a human-readable date and time, you can use the date() function, like this:
 
 $timestamp = 1645461000;
-$date_time = date('Y-m-d h:i:s', $timestamp);
+$date_time = date('Y-m-j h:i:s', $timestamp);
 echo "Date and time for Unix timestamp " . $timestamp . ": " . $date_time;
 echo PHP_EOL;
 // Output:
