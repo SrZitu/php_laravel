@@ -35,10 +35,8 @@ if (move_uploaded_file($_FILES["profile_picture"]["tmp_name"], $target_file)) {
     // Set cookie and start session
     session_start();
     setcookie('username', $name, time() + 3600, '/');
-
     echo "Registration successful!";
+    require_once 'readcsv.php';
 } else {
     echo "Error uploading profile picture.";
 }
-
-?>
