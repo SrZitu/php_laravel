@@ -1,4 +1,5 @@
 <?php
+
 $filename = "C:/xampp/htdocs/php-laravel/files/data.txt";
 $fp = fopen($filename, 'r');
 while ($line = fgets($fp)) {
