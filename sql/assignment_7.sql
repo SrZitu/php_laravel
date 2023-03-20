@@ -29,7 +29,7 @@ Select * FROM departments;
 select name,manager from departments where name='finance';
 (This SQL statement selects only the name and manager columns from the departments table where the name is "Finance".)
 
-select name,count(departments.name) as total_in_one_department from departments group by departments.name;
+SELECT name, COUNT(departments.id) AS total_in_one_department FROM departments GROUP BY name;
 (This SQL statement retrieves the name column and the count of the number of employees in each department from the departments table. 
 It uses the GROUP BY clause to group the result set by the name column.)
 
