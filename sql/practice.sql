@@ -1,3 +1,5 @@
+
+//my sql pass:srzitu744822755
 CREATE DATABASE Company;
 
 CREATE TABLE Employee(
