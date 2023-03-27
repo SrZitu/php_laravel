@@ -9,17 +9,27 @@ if (empty($email) || empty($password)) {
   exit();
 }
 
-// Check if email and password are valid 
-$validEmail = "zitu094@gmail.com";
-$validPassword = "1234";
+// Open the CSV file
+$file = fopen('data.csv', 'r');
 
-if ($email === $validEmail && $password === $validPassword) {
-  // Redirect to welcome page with first name
-  $firstName = "zitu";
-  header("Location: wellcome.php?firstName=$firstName");
-  exit();
+// Check if the data already exists in the CSV file
+$matched = false;
+while (($data = fgetcsv($file)) !== false) {
+  if ($data[0] == $email && $data[1] == $password) {
+    $firstName = $data[2];
+    $matched = true;
+    break;
+  }
+}
+
+// Close the file
+fclose($file);
+
+if ($matched) {
+  // Redirect to welcome.php with the first name parameter
+  header("Location: wellcome.php?firstName=" . urlencode($firstName));
+  exit;
 } else {
-
   // Redirect back to index.php with error message
   $error_message = "Invalid email or password. Please try again.";
   header("Location: index.php?error_message=" . urlencode($error_message));

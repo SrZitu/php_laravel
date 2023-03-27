@@ -24,6 +24,13 @@
     exit();
   }
 
+// Open the CSV file
+$file = fopen('data.csv', 'a');
+
+// Write the data to the file
+fputcsv($file, [$firstName,$lastName,$email,$password,$confirmPassword]);
+
+// Close the file
+fclose($file);
   // If all validation passes, Display the Successfully Registered Message
   echo "Sucessfully Registered";
-?>

@@ -1,8 +1,3 @@
-<?php
-// Retrieve first name from URL query string
-$firstName = $_GET['firstName'];
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -13,15 +8,13 @@ $firstName = $_GET['firstName'];
 
 <body>
   <div class="container">
-    <div class="row mt-4 text-center">
+    <div class="row mt-4 text-center text-success">
       <div class="col-6 md-6 sm-6">
-        <h1>Welcome <?php echo $firstName; ?></h1>
-        <p class="text-success">You have successfully <b>logged in.</b></p>
+        <h1>Welcome, <?php echo $_GET['firstName']; ?>!</h1>
+        <p>You have Successfully Loged in</p>
       </div>
-
     </div>
   </div>
-
 </body>
 
 </html>
